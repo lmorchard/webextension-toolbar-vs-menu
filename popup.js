@@ -26,7 +26,7 @@ window.addEventListener('resize', ev => {
   resizePending = true;
 
   window.requestAnimationFrame(time => {
-    log('resize (handled)', width);
+    log('resize (handled)', width, width < NARROW_MIN_WIDTH ? 'menu' : 'toolbar');
     document.body.classList[width < NARROW_MIN_WIDTH ? 'add' : 'remove']('narrow');
     resizePending = false;
   });
