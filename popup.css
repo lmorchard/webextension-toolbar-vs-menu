@@ -17,3 +17,20 @@
 .narrow #app span.in-toolbar {
   display: none;
 }
+
+/* Note: Media queries don't seem to work!
+@media (max-width: 300px) {
+  #app {
+    width: inherit;
+  }
+  #app h1 {
+    font-size: 1.2em;
+  }
+  #app span.in-menu {
+    display: inline;
+  }
+  #app span.in-toolbar {
+    display: none;
+  }
+}
+*/
