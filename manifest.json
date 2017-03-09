@@ -1,0 +1,18 @@
+{
+  "description": "Experiment with styles for browser action panels in toolbar vs menu buttons",
+  "manifest_version": 2,
+  "name": "Toolbar vs Menu",
+  "version": "1.0",
+  "homepage_url": "https://github.com/lmorchard/webextensions-toolbar-vs-menu",
+  "icons": {
+    "48": "718smiley.svg"
+  },
+  "browser_action": {
+    "browser_style": false,
+    "default_title": "Toolbar vs Menu",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "718smiley.svg"
+    }
+  }
+}

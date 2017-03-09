@@ -1,0 +1,19 @@
+#app {
+  width: 320px;
+}
+#app span.in-menu {
+  display: none;
+}
+
+.narrow #app {
+  width: inherit;
+}
+.narrow #app h1 {
+  font-size: 1.2em;
+}
+.narrow #app span.in-menu {
+  display: none;
+}
+.narrow #app span.in-toolbar {
+  display: inline;
+}
