@@ -12,6 +12,11 @@ let resizePending = false;
 window.addEventListener('resize', ev => {
   const width = document.body.clientWidth;
 
+  if (width === 0) {
+    log('resize (zero - ignored)', width);
+    return;
+  }
+
   if (resizePending) {
     log('resize (ignored)', width);
     return;

@@ -2,8 +2,8 @@ Toolbar vs Menu WebExtension Experiment
 =======================================
 
 This is a quick & dirty demo WebExtension for Firefox to play with styles that
-adapt to browser action popups invoked from the toolbar versus the menu
-sidebar.
+adapt to browser action popups invoked from the toolbar versus the (presumably
+narrower) menu sidebar.
 
 ### Usage
 
