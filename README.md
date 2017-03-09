@@ -19,10 +19,13 @@ in `manifest.json`.
 
 By default, this button is in the toolbar and [the popup is automatically sized
 to fit the content](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/User_interface_components#Popup_resizing).
-However, [this button can be moved to the sidebar menu](https://support.mozilla.org/t5/Customize-controls-options-and/Customize-Firefox-controls-buttons-and-toolbars/ta-p/2715#w_customize-the-menu-or-the-toolbar) and in this case the popup gets a fixed width.
+However, [this button can be moved to the sidebar menu](https://support.mozilla.org/t5/Customize-controls-options-and/Customize-Firefox-controls-buttons-and-toolbars/ta-p/2715#w_customize-the-menu-or-the-toolbar)
+and in this case the popup gets a fixed width. Though, of course, this fixed
+width is specified in `em` font units and actually *varies* depending on font
+sizes & DPI between platforms.
 
-So, it would be nice to have popup styles that vary between the variable sizing
-from the toolbar and the fixed width (but variable height!) from the sidebar
+Anyway. It would be nice to have popup styles that vary between the variable sizing
+from the toolbar and the fixed width (but semi-variable height!) from the sidebar
 menu.
 
 <img width="391" alt="screenshot 2017-03-09 17 13 25" src="https://cloud.githubusercontent.com/assets/21687/23773123/d46b7620-04eb-11e7-905c-503e924dd6cd.png">
