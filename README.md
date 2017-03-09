@@ -5,6 +5,12 @@ This is a quick & dirty demo WebExtension for Firefox to play with styles that
 adapt to browser action popups invoked from the toolbar versus the (presumably
 narrower) menu sidebar.
 
+### Usage
+
+1. Clone this repo
+1. Go to [`about:debugging`](https://developer.mozilla.org/en-US/docs/Tools/about:debugging) in Firefox
+1. Load `manifest.json` as a temporary add-on.
+
 ### What?
 
 A WebExtension in Firefox can add a button that summons a popup
@@ -19,11 +25,9 @@ So, it would be nice to have popup styles that vary between the variable sizing
 from the toolbar and the fixed width (but variable height!) from the sidebar
 menu.
 
-### Usage
+<img width="391" alt="screenshot 2017-03-09 17 13 25" src="https://cloud.githubusercontent.com/assets/21687/23773123/d46b7620-04eb-11e7-905c-503e924dd6cd.png">
 
-1. Clone this repo
-1. Go to [`about:debugging`](https://developer.mozilla.org/en-US/docs/Tools/about:debugging) in Firefox
-1. Load `manifest.json` as a temporary add-on.
+<img width="297" alt="screenshot 2017-03-09 17 13 46" src="https://cloud.githubusercontent.com/assets/21687/23773125/d92d0520-04eb-11e7-8864-c23bc43d901b.png">
 
 ### Credits
 
