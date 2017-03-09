@@ -12,8 +12,8 @@
   font-size: 1.2em;
 }
 .narrow #app span.in-menu {
-  display: none;
+  display: inline;
 }
 .narrow #app span.in-toolbar {
-  display: inline;
+  display: none;
 }

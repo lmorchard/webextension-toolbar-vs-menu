@@ -2,19 +2,17 @@ const NARROW_MIN_WIDTH = 320;
 
 log('init start ------------------------------');
 
-const windowEvents = {
-  load: ev => {
-    log('load');
-  },
-  resize: ev => {
-    const width = document.body.clientWidth;
-    log('resize', width);
-    document.body.classList[width < NARROW_MIN_WIDTH ? 'add' : 'remove']('narrow');
-  }
-};
+window.addEventListener('load', ev => {
+  log('load');
+});
 
-Object.keys(windowEvents)
-  .forEach(name => window.addEventListener(name, windowEvents[name]));
+window.addEventListener('resize', ev => {
+  const width = document.body.clientWidth;
+  log('resize', width);
+
+  // TODO: Debounce this with requestAnimationFrame?
+  document.body.classList[width < NARROW_MIN_WIDTH ? 'add' : 'remove']('narrow');
+});
 
 log('init end');
 
