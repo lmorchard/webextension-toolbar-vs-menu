@@ -11,6 +11,13 @@ narrower) menu sidebar.
 1. Go to [`about:debugging`](https://developer.mozilla.org/en-US/docs/Tools/about:debugging) in Firefox
 1. Load `manifest.json` as a temporary add-on.
 
+### TODOs / Challenges
+
+- [ ] Reliably detect placement in Toolbar vs Menu (mostly works, sometimes buggy)
+- [ ] UX with header title, footer controls, and content area that fills the popup
+- [ ] Popup from toolbar with fixed 320 x 320 dimensions
+- [ ] Popup from menu sidebar that adapts to the fixed width and default height
+
 ### What?
 
 A WebExtension in Firefox can add a button that summons a popup
