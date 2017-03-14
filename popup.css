@@ -26,7 +26,7 @@ html, body {
   position: absolute;
   transition: left 250ms ease-in-out, opacity 250ms ease-in-out;
   left: 100%;
-  opacity: .3;
+  opacity: .5;
   width: calc(100% - 7px);
   height: 100%;
   display: flex;
@@ -40,7 +40,6 @@ html, body {
 }
 
 #app .panel.static {
-  transition: opacity 250ms ease-in-out;
   width: 100%;
   left: 0;
 }
@@ -102,6 +101,13 @@ body.narrow {
 .narrow #app {
   width: inherit;
   height: 100%;
+}
+.narrow #app .panel {
+  width: 100%;
+  height: 100%;
+}
+.narrow #app .panel.active {
+  left: 0;
 }
 .narrow #app .content {
   font-size: 14px;
