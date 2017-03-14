@@ -7,29 +7,78 @@
   </head>
   <body>
     <div id="app">
-      <header>
-        <h1>Toolbar vs Menu</h1>
-      </header>
-      <div class="content">
-        <p>This popup thinks it's in the <span class="in-menu">menu</span><span class="in-toolbar">toolbar</span>.</p>
-        <p>
-        And now, time for some Sagan Ipsum: Another world dispassionate extraterrestrial observer, with pretty stories for which there's little good evidence.
-        </p><p>
-        Billions upon billions inconspicuous motes of rock and gas something incredible is waiting to be known not a sunrise but a galaxyrise dream of the mind's eye vastness is bearable only through love?
-        </p><p>
-        Another world ship of the imagination. Muse about made in the interiors of collapsing stars Cambrian explosion, consciousness extraplanetary. Decipherment, tesseract rich in heavy atoms hearts of the stars the only home we've ever known not a sunrise but a galaxyrise descended from astronomers, shores of the cosmic ocean tesseract laws of physics, shores of the cosmic ocean encyclopaedia galactica Rig Veda, a mote of dust suspended in a sunbeam.
-        </p><p>
-        The ash of stellar alchemy culture, kindling the energy hidden in matter white dwarf corpus callosum paroxysm of global death, Cambrian explosion hundreds of thousands hearts of the stars.
-        </p><p>
-        Star stuff harvesting star light, science. Realm of the galaxies billions upon billions preserve and cherish that pale blue dot prime number! From which we spring.
-        </p><p>
-        Dispassionate extraterrestrial observer Tunguska event made in the interiors of collapsing stars extraordinary claims require extraordinary evidence Vangelis emerged into consciousness Hypatia, consciousness birth. Rich in mystery the carbon in our apple pies Champollion muse about? Astonishment quasar, light years?
-        </p>
+      <div class="shadow"></div>
+
+      <div class="panel static active" id="main">
+        <header>
+          <h1>Toolbar vs Menu</h1>
+        </header>
+        <div class="content">
+          <p>This popup thinks it's in the <span class="in-menu">menu</span><span class="in-toolbar">toolbar</span>.</p>
+          <p>
+          And now, time for some Sagan Ipsum: Another world dispassionate extraterrestrial observer, with pretty stories for which there's little good evidence.
+          </p><p>
+          Billions upon billions inconspicuous motes of rock and gas something incredible is waiting to be known not a sunrise but a galaxyrise dream of the mind's eye vastness is bearable only through love?
+          </p><p>
+          Another world ship of the imagination. Muse about made in the interiors of collapsing stars Cambrian explosion, consciousness extraplanetary. Decipherment, tesseract rich in heavy atoms hearts of the stars the only home we've ever known not a sunrise but a galaxyrise descended from astronomers, shores of the cosmic ocean tesseract laws of physics, shores of the cosmic ocean encyclopaedia galactica Rig Veda, a mote of dust suspended in a sunbeam.
+          </p><p>
+          The ash of stellar alchemy culture, kindling the energy hidden in matter white dwarf corpus callosum paroxysm of global death, Cambrian explosion hundreds of thousands hearts of the stars.
+          </p><p>
+          Star stuff harvesting star light, science. Realm of the galaxies billions upon billions preserve and cherish that pale blue dot prime number! From which we spring.
+          </p><p>
+          Dispassionate extraterrestrial observer Tunguska event made in the interiors of collapsing stars extraordinary claims require extraordinary evidence Vangelis emerged into consciousness Hypatia, consciousness birth. Rich in mystery the carbon in our apple pies Champollion muse about? Astonishment quasar, light years?
+          </p>
+        </div>
+        <footer>
+          <button class="ok">Ok</button>
+          <button class="make-active" data-target="subpanel1">Subpanel &gt;</button>
+        </footer>
       </div>
-      <footer>
-        <button class="ok">Ok</button>
-        <button class="cancel">Whatever</button>
-      </footer>
+
+      <div class="panel-group">
+        <div class="panel" id="subpanel1">
+          <header>
+            <h1>Sub-panel</h1>
+          </header>
+          <div class="content">
+            <p>Yay cupcakes!</p>
+            <p>
+              Icing cake sweet biscuit cheesecake bear claw chocolate lemon drops. Wafer macaroon tiramisu pastry cheesecake chocolate candy. Ice cream cookie dragée candy canes cotton candy cake powder oat cake tart. Chocolate wafer cotton candy jujubes.
+            </p><p>
+              Croissant carrot cake marshmallow gingerbread bear claw. Marshmallow pie wafer gingerbread jelly-o marshmallow sweet roll croissant sesame snaps. Marshmallow cheesecake tiramisu icing bonbon. Liquorice marzipan carrot cake.
+            </p><p>
+              Brownie gingerbread soufflé tootsie roll muffin jelly jujubes pie sesame snaps. Cake dessert macaroon. Cake gummi bears halvah cookie macaroon.
+            </p><p>
+              Lollipop carrot cake cookie powder. Jelly-o lemon drops cupcake lemon drops wafer chocolate cake pie gummi bears. Sesame snaps candy sweet roll candy.
+            </p><p>
+              Cupcake halvah danish sweet. Gingerbread tiramisu ice cream icing sweet candy canes pie soufflé. Cookie apple pie cake cheesecake. Sweet roll jelly oat cake tiramisu carrot cake toffee sweet bonbon.
+            </p>
+          </div>
+          <footer>
+            <button class="make-active" data-target="main">&lt; Back</button>
+            <button class="make-active" data-target="subpanel2">Sub-sub-panel &gt;</button>
+          </footer>
+        </div>
+
+        <div class="panel" id="subpanel2">
+          <header>
+            <h1>Sub-sub-panel</h1>
+          </header>
+          <div class="content">
+            <p>Yay bacon!</p>
+            <p>
+              Pastrami t-bone fatback beef ribs. Beef corned beef ribeye, tail biltong drumstick short loin beef ribs tongue. Capicola ground round chicken, kevin beef ribs pork chop swine pastrami pig. Short ribs flank ribeye drumstick, kielbasa shoulder pig frankfurter chicken tri-tip cupim hamburger.
+            </p><p>
+              Ham tail tenderloin doner chuck porchetta. Biltong chuck shoulder, corned beef alcatra ball tip boudin ham landjaeger strip steak swine pork pork loin burgdoggen. T-bone turducken drumstick frankfurter tongue. Porchetta pork loin leberkas ham hock kevin. Ball tip chicken ribeye, pig sausage bacon porchetta burgdoggen flank tongue leberkas t-bone sirloin.
+            </p>
+          </div>
+          <footer>
+            <button class="make-active" data-target="subpanel1">&lt; Back</button>
+          </footer>
+        </div>
+
+      </div>
+
     </div>
     <script src="popup.js"></script>
   </body>

@@ -2,6 +2,13 @@ const NARROW_MIN_WIDTH = 320;
 
 log('init start ------------------------------');
 
+document.querySelectorAll('button.make-active').forEach(el =>
+  el.addEventListener('click', ev => {
+    document.querySelectorAll('.panel.active').forEach(subEl => subEl.classList.remove('active'));
+    document.querySelector(`#${el.getAttribute('data-target')}.panel`).classList.add('active');
+  })
+);
+
 window.addEventListener('load', ev => {
   log('load');
 });

@@ -13,23 +13,53 @@ html, body {
 #app {
   width: 320px;
   height: 480px;
+}
+
+#app .shadow {
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+#app .panel {
+  position: absolute;
+  transition: left 250ms ease-in-out, opacity 250ms ease-in-out;
+  left: 100%;
+  opacity: .3;
+  width: calc(100% - 7px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
+
+#app .panel.active {
+  left: 7px;
+  opacity: 1;
+}
+
+#app .panel.static {
+  transition: opacity 250ms ease-in-out;
+  width: 100%;
+  left: 0;
+}
+
 #app span.in-menu {
   display: none;
 }
+
 #app header {
   background-color: #e4e4e4;
   padding: 5px;
 }
+
 #app header h1 {
   margin: 0;
   text-align: center;
 }
+
 #app .content {
-  /* border: 1px dashed #000; */
   flex-grow: 2;
   overflow-y: auto;
   background-color: #ffffff;
@@ -44,6 +74,7 @@ html, body {
   flex-direction: row;
   align-items: stretch;
 }
+
 #app footer button {
   display: block;
   background-color: #eee;
@@ -54,12 +85,16 @@ html, body {
   margin: 0;
   padding: 10px;
 }
+
 #app footer button:hover {
   background-color: #d4d4d4;
 }
+
 #app footer button:active {
   background-color: #d0d0d0;
 }
+
+/* narrow adaptation styles ----------- */
 
 body.narrow {
   height: 100%;
