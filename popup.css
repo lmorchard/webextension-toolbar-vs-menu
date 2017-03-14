@@ -5,11 +5,14 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: #e4e4e4;
+  font-family: 'Fira Sans';
+  font-size: 16px;
 }
 
 #app {
   width: 320px;
-  height: 320px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -18,7 +21,7 @@ html, body {
   display: none;
 }
 #app header {
-  background-color: #eee;
+  background-color: #e4e4e4;
   padding: 5px;
 }
 #app header h1 {
@@ -26,25 +29,36 @@ html, body {
   text-align: center;
 }
 #app .content {
-  border: 1px dashed #000;
+  /* border: 1px dashed #000; */
   flex-grow: 2;
   overflow-y: auto;
+  background-color: #ffffff;
 }
 #app .content p {
   margin: 1em 20px;
 }
 #app footer {
-  background-color: #eee;
+  background-color: #e4e4e4;
   height: 48px;
-  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
 #app footer button {
   display: block;
+  background-color: #eee;
+  border: none;
   flex-grow: 1;
+  font-family: 'Fira Sans';
   font-size: 16px;
+  margin: 0;
+  padding: 10px;
+}
+#app footer button:hover {
+  background-color: #d4d4d4;
+}
+#app footer button:active {
+  background-color: #d0d0d0;
 }
 
 body.narrow {

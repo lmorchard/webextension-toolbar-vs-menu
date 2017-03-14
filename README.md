@@ -14,9 +14,10 @@ narrower) menu sidebar.
 ### TODOs / Challenges
 
 - [ ] Reliably detect placement in Toolbar vs Menu (mostly works, sometimes buggy)
-- [ ] UX with header title, footer controls, and content area that fills the popup
-- [ ] Popup from toolbar with fixed 320 x 320 dimensions
-- [ ] Popup from menu sidebar that adapts to the fixed width and default height
+- [ ] Sub-panels with slide-in transitions
+- [x] UX with header title, footer controls, and content area that fills the popup
+- [x] Popup from toolbar with fixed 320 x 480 dimensions
+- [x] Popup from menu sidebar that adapts to the fixed width and default height
 
 ### What?
 
