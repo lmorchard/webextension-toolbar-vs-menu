@@ -36,9 +36,8 @@ Anyway. It would be nice to have popup styles that vary between the variable siz
 from the toolbar and the fixed width (but semi-variable height!) from the sidebar
 menu.
 
-<img width="391" alt="screenshot 2017-03-09 17 13 25" src="https://cloud.githubusercontent.com/assets/21687/23773123/d46b7620-04eb-11e7-905c-503e924dd6cd.png">
-
-<img width="297" alt="screenshot 2017-03-09 17 13 46" src="https://cloud.githubusercontent.com/assets/21687/23773125/d92d0520-04eb-11e7-8864-c23bc43d901b.png">
+<img width="369" alt="screenshot 2017-03-15 14 20 17" src="https://cloud.githubusercontent.com/assets/21687/23964394/b555bec8-098a-11e7-9be5-9f12a02d16db.png">
+<img width="316" alt="screenshot 2017-03-15 14 21 26" src="https://cloud.githubusercontent.com/assets/21687/23964397/b795bcd8-098a-11e7-9bf5-fbc4ad233f52.png">
 
 ### Credits
 
