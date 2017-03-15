@@ -39,6 +39,11 @@ html, body {
   opacity: 1;
 }
 
+#app .panel.obscured {
+  left: 7px;
+  opacity: 0.5;
+}
+
 #app .panel.static {
   width: 100%;
   left: 0;
@@ -107,6 +112,9 @@ body.narrow {
   height: 100%;
 }
 .narrow #app .panel.active {
+  left: 0;
+}
+.narrow #app .panel.obscured {
   left: 0;
 }
 .narrow #app .content {

@@ -1,15 +1,20 @@
 const NARROW_MIN_WIDTH = 320;
+const $$ = (sel, cb) => document.querySelectorAll(sel).forEach(cb);
 
 log('init start ------------------------------');
-
-const $$ = (sel, cb) => document.querySelectorAll(sel).forEach(cb);
 
 $$('button.close', el => el.addEventListener('click', ev => window.close()));
 
 $$('button.make-active', el =>
   el.addEventListener('click', ev => {
     $$('.panel.active', subEl => subEl.classList.remove('active'));
-    $$(`#${el.getAttribute('data-target')}.panel`, subEl => subEl.classList.add('active'));
+    $$('.panel.obscured', subEl => subEl.classList.remove('obscured'));
+    $$(`#${el.getAttribute('data-target')}.panel`, subEl => {
+      subEl.classList.add('active');
+    });
+    $$(`#${el.getAttribute('data-to-obscure')}.panel`, subEl => {
+      subEl.classList.add('obscured');
+    });
   })
 );
 
@@ -18,7 +23,7 @@ window.addEventListener('load', ev => log('load'));
 // HACK: debounce resize event handling with a flag & requestAnimationFrame
 // https://developer.mozilla.org/en-US/docs/Web/Events/resize
 let resizePending = false;
-window.addEventListener('resize', ev => {
+const resizeHandler = ev => {
   const width = document.body.clientWidth;
 
   if (width === 0) {
@@ -38,8 +43,11 @@ window.addEventListener('resize', ev => {
     log('resize (handled)', width, width < NARROW_MIN_WIDTH ? 'menu' : 'toolbar');
     document.body.classList[width < NARROW_MIN_WIDTH ? 'add' : 'remove']('narrow');
     resizePending = false;
+    window.removeEventListener('resize', resizeHandler);
   });
-});
+};
+
+window.addEventListener('resize', resizeHandler);
 
 log('init end');
 
